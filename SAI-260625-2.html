@@ -1,0 +1,23 @@
+<html>
+    <script>
+        var x = 0, y = 0
+        var nome = new Array();
+        var idade = new Array();
+
+        for(i = 1; i<=3; i++){
+             var x = prompt("Digite o "+i+"º nome: ")
+             nome.push(x)
+             var y = prompt("Digite a "+i+"º idade: ")
+             idade.push(y)
+        }
+
+        alert("Pessoas que não podem votar: ")
+        for(i = 1; i<=3; i++){
+            if(idade[i] < 16){
+                alert(nome[i])
+            }
+        }
+        alert(x)
+        console.log(x);
+    </script>
+</html>
