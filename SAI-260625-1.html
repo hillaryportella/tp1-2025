@@ -2,11 +2,21 @@
     <script>
         var x = []
         for(var i = 0; i<3; i++){
-             y = prompt("Digite o "+(i+1)+"º número inteiro: ")
+             y = parseInt(prompt("Digite o "+(i+1)+"º número inteiro: "))
              x.push(y)
         }
         
-        x.sort()
+        function comparar(a, b) {
+        if (a<b) {
+            return -1;
+        }
+        if (a>b) {
+            return 1;
+        }
+        return 0;
+}
+
+        x.sort(comparar)
         alert(x);
     </script>
 </html>
