@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <link rel="" href="style.css">
+     </head>
+     <body>
+          <h1>Calculadora de regra de três</h1>
+     </body>
+
+<input type="number" id="a">
+----
+<input type="number" id="b">
+<br>
+<input type="number" id="c">
+---- x
+<br>
+<input type="button" value="Calcular x" onclick="calculo()">
+<h4 id="resultado"></h4>
+
+<script>
+function calculo(){
+     let x = (a.value*b.value)/c.value
+     resultado.innerHTML = `x = ${x}`
+}
+</script>
+</html>

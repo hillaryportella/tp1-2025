@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+</head>
+<style>
+    h1, h2, h3{color: darkblue;}
+    p{color: blue;}
+</style>
+<body>
+    <h1>Dia 2 de Julho de 2025</h1>
+    <h2>Sumário:</h2>
+    <p id="primeiro">1º - Colocando hiperlinks.<br>2° - Colocando imagens<br>3º - Definindo as cores dos textos de forma geral e específica.</p>
+
+    <h2><br>Colocando hiperlinks</h2>
+    <h3>Link que leva a uma página externa:</h3>
+    <p><a href="https://www.w3schools.com/html/html_elements.asp">W3schools, HTML elements (link com endereço absoluto).</a></p>
+    <h3>Link que leva a outra página existente no computador:</h3>
+    <p><a href="./index.html">index.html (link com endereço local).</a></p>
+
+    <h2><br>Colocando imagens</h2>
+    <p>"Em src", coloca-se o nome da imagem. Em "alt", coloca-se o texto alternativo que aparece em caso do arquivo de imagem não ser encontrado. Em "width", define-se a largura e em "height" define-se a altura. Em "title", insere-se um texto que aparecerá quando o cursor estiver em cima da imagem, texto, etc.</p>
+    <img src="./img/spr_playerfrenteparado.png" width="200" height="200" alt="Sprite do player stand." title="Texto que aparece quando cursor está em cima da imagem."> 
+    <img src="./img/spr_playerfrenteanda1.PNG" width="200" height="200" alt="Primeiro sprite do player andando de frente.">
+    <img src="./img/spr_playerfrenteanda2.PNG" width="200" height="200" alt="Segundo sprite do player andando de frente.">
+    <img src="./img/spr_playertras.PNG" width="200" height="200" alt="Sprite do player de costas.">
+    <img src="./img/spr_playertrasanda1.PNG" width="200" height="200" alt="Primeiro sprite do player andando de costas.">
+    <img src="./img/spr_playertrasanda2.PNG" width="200" height="200" alt="Segundo sprite do player andando de costas.">
+
+    <h2><br>Definindo cores de texto</h2>
+    <h3>De maneira geral:</h3>
+    <p>Cria-se uma tag chamada "style" e dentro dela insere-se "tipodotexto{color: cor}".</p>
+    <h3>De maneira específica:</h3>
+    <p>Dentro da tag do texto (exemplo: p, h1, h2, etc), insere-se "id=nomeidentificadordotexto" (exemplo: id=primeiro). Depois cria-se uma tag chamada "style" e dentro dela insere-se "tipodotexto#nomeidentificador{color: cor}".</p>
+
+    <h2><br>Observações:</h2>
+    <p>1º - O "./" é usado para selecionar uma pasta/arquivo dentro do computador.<br>2º - Quando insere-se uma segunda imagem e há espaço ao lado da primeira, esta ficará ao lado. Para colocá-la embaixo, é necessário um "br".<br>3º - Para comentar, insere-se "/*" e fecha-se com "*/"<br>4ª - "font-weight: bold;" é utilizado para tornar um texto negrito.<br>5º - O comando "Lorem" é utilizado para gerar um texto aleatório.</p>
+    <img src="./img/comicfim.PNG" width="200" height="400">
+    <img src="./img/comicinicio.PNG" width="200" height="400">
+</body>
+</html>

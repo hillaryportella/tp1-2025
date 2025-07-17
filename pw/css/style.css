@@ -1,0 +1,29 @@
+h1{
+    text-align: center;
+    padding: 30px;
+    color:palevioletred;
+    margin: 0;
+}
+*{
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+div{
+    color: palevioletred
+}
+p#diferente{
+    margin: 20px;
+}
+.amarelo{
+    background-color: palevioletred;
+    color: white;
+}
+body{
+    background-color: rgb(255, 253, 254);
+}
+p{
+    color: palevioletred;
+}
+h4{
+    color: palevioletred;
+    border: 2px solid rgb(233, 180, 211);
+}
