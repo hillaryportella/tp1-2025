@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+ <h1 >Calculadora Simples</h1>
+
+
+<script>
+    function soma(){
+        var x = n1.value
+        var y = n2.value
+        var resultado = parseFloat(x) + parseFloat(y)
+        document.getElementById('r').innerHTML = resultado
+    }
+    function subtracao(){
+        var x = n1.value
+        var y = n2.value
+        var resultado = parseFloat(x) - parseFloat(y)
+        document.getElementById('r').innerHTML = resultado
+    }
+    function multiplicacao(){
+        var x = n1.value
+        var y = n2.value
+        var resultado = parseFloat(x) * parseFloat(y)
+        document.getElementById('r').innerHTML = resultado
+    }
+    function divisao(){
+        var x = n1.value
+        var y = n2.value
+        var resultado = parseFloat(x) / parseFloat(y)
+        document.getElementById('r').innerHTML = resultado
+    }
+    function limpar(){
+        n1.value = ""
+        n2.value = ""
+        
+    }
+</script>
+
+<input type="text" id="n1" value=""><br>
+<input type="text" id="n2" value=""><br>
+<input type="button" value="+" onClick="soma()">
+<input type="button" value="-" onClick="subtracao()">
+<input type="button" value="*" onClick="multiplicacao()">
+<input type="button" value="/" onClick="divisao()">
+<input type="button" value="Limpar" onClick="limpar()">
+<p id="r">Insira dois valores</p>
+
+
+</html>
+
