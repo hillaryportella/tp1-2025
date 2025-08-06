@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" , initial-scale="1.0">
+    <style>
+        * {
+            font-size: 40pt;
+            color: white;
+        }
+
+        div.itens {
+            background-color: pink;
+            margin: 5px;
+        }
+
+        div.container {
+            border: 2px solid black;
+            max-width: 850px;
+            margin: 10px auto;
+            /* top e bottom com 10 px e right e left automatico, ou seja, distribui igualmente*/
+            display: flex;
+            /*flex-direction: row;
+            flex-wrap: wrap; forçar a quebra*/
+            /*flex-flow: row wrap; */
+            height: 200px;
+            /* justify-content: center; /*organiza os elementos dentro do container. O justify-content funciona em relação ao main axis. O align-itens funciona em função do segundo axis. O eixo principal será horizontal quando o flex-direction for row, e vertical quando for column
+            align-items: end; */
+        }
+        div.item1{
+            flex-grow: 2;
+        }
+        div.item2{
+            flex-grow: 3;
+        }
+        div.item3{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1 itens">caixa 01</div>
+        <div class="item2 itens">caixa 02</div>
+        <div class="item3 itens">caixa 03</div>
+        
+    </div>
+</body>
+
+</html>
