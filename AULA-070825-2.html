@@ -16,15 +16,10 @@
         console.log(object.operacao)
 
         object.resultado = parseFloat(object.op1) + parseFloat(object.op2)
-        document.getElementById('r').innerHTML = object.resultado
+        document.getElementById('r').innerHTML = object.op1 + object.operacao + object.op2 + " = " + object.resultado
         console.log(object.resultado)
 
         vetor.push(object)
-
-        // criar elemento
-        // let listItem = document.createElement("li")
-        // injetar o texto da conta no innerHTML do elemento `${object.resultado}`
-        
     }
     function soma(){
         var x = n1.value
@@ -33,22 +28,52 @@
         document.getElementById('r').innerHTML = resultado
     }
     function subtracao(){
-        var x = n1.value
-        var y = n2.value
-        var resultado = parseFloat(x) - parseFloat(y)
-        document.getElementById('r').innerHTML = resultado
+        let object = {}
+        object.op1 = n1.value
+        object.op2 = n2.value
+        console.log(object.op1)
+        console.log(object.op2)
+
+        object.operacao = "-"
+        console.log(object.operacao)
+
+        object.resultado = parseFloat(object.op1) - parseFloat(object.op2)
+        document.getElementById('r').innerHTML = object.op1 + object.operacao + object.op2 + " = " + object.resultado
+        console.log(object.resultado)
+
+        vetor.push(object)
     }
     function multiplicacao(){
-        var x = n1.value
-        var y = n2.value
-        var resultado = parseFloat(x) * parseFloat(y)
-        document.getElementById('r').innerHTML = resultado
+        let object = {}
+        object.op1 = n1.value
+        object.op2 = n2.value
+        console.log(object.op1)
+        console.log(object.op2)
+
+        object.operacao = "*"
+        console.log(object.operacao)
+
+        object.resultado = parseFloat(object.op1) * parseFloat(object.op2)
+        document.getElementById('r').innerHTML = object.op1 + object.operacao + object.op2 + " = " + object.resultado
+        console.log(object.resultado)
+
+        vetor.push(object)
     }
     function divisao(){
-        var x = n1.value
-        var y = n2.value
-        var resultado = parseFloat(x) / parseFloat(y)
-        document.getElementById('r').innerHTML = resultado
+        let object = {}
+        object.op1 = n1.value
+        object.op2 = n2.value
+        console.log(object.op1)
+        console.log(object.op2)
+
+        object.operacao = "/"
+        console.log(object.operacao)
+
+        object.resultado = parseFloat(object.op1) / parseFloat(object.op2)
+        document.getElementById('r').innerHTML = object.op1 + object.operacao + object.op2 + " = " + object.resultado
+        console.log(object.resultado)
+
+        vetor.push(object)
     }
     function limpar(){
         n1.value = ""
