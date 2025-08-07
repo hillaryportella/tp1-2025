@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+body {
+    background-color: #201c1c;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+.cabecalho {
+    background-color: #580e18e2; /* Vermelho escuro */
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+/* Menu */
+.menu-lista {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.menu-lista li {
+    margin: 0 10px;
+    flex-grow: 1;
+    flex-basis: auto;
+}
+
+.menu-lista a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.menu-lista a:hover {
+    background-color: #580e18e2;
+}
+
+/* Conteúdo principal */
+.conteudo-principal {
+    margin-top: 70px; /* Para compensar o cabeçalho fixo */
+    padding: 20px;
+}
+
+.destaque {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+.destaque h1 {
+    color: #580e18e2;
+    margin-bottom: 10px;
+}
+
+/* Áreas do conteúdo */
+.areas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.area {
+    flex: 1 1 300px;
+    background-color: #dddddd;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.area:hover {
+    transform: translateY(-5px);
+}
+
+.area h2 {
+    color: #580e18e2;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #891527;
+    padding-bottom: 5px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #891527;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #891527;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #580e18e2;
+    color: white;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+}
+
+/* Páginas internas (exemplo para picanha.html) */
+.pagina-interna {
+    margin: 70px 20px 70px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pagina-interna img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.pagina-interna h1 {
+    color: #580e18e2;
+    margin-bottom: 20px;
+}
+
+.pagina-interna p {
+    margin-bottom: 15px;
+}
