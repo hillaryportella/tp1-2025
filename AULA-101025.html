@@ -8,9 +8,6 @@
 <body>
 
     <h1>Interagindo com a API de Nomes</h1>
-
-    <h2>1. Salvar Nome</h2>
-    
     <form hx-post="https://ola-tp1.onrender.com/nomes" 
           hx-target="#resultado-post" 
           hx-swap="innerHTML">
@@ -18,15 +15,10 @@
         <input type="text" name="nome" placeholder="Digite um nome" required>
         <button type="submit">Salvar nome</button>
     </form>
-    
-    <h3>Resposta ao Salvar:</h3>
     <div id="resultado-post">
         Aguardando envio...
     </div>
-
-    
-
-    <h2>2. Listar Nomes</h2>
+    <h2>Lista Nomes</h2>
 
     <button hx-get="https://ola-tp1.onrender.com/nomes" 
             hx-target="#resultado-get" 
