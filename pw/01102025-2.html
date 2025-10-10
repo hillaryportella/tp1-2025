@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Atividade</title>
+    <style>
+        .bloco{
+            display: block;
+        }
+        input:hover{
+            background-color: rgb(195, 221, 195);
+        }
+        input[type="submit"]{
+            margin-bottom: 20px;
+        }
+        div{
+            width: 200px;
+            padding: 10px;
+            margin: auto;
+            background-color: rgb(132, 179, 150);
+        }
+        .margin{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Formulário</h1>
+    <form action="#" method="get">
+            <label class="bloco" for="nome">Nome:</label>
+            <input class="margin" type="text" name="nome" id="nome" placeholder="Seu nome" title="Digite seu nome" maxlength="30" minlength="2">
+
+            <label class="bloco" for="idade">Idade</label>
+            <input class="margin" type="number" name="idade" id="idade" placeholder="Sua idade" min="15" title="Digite sua idade">
+
+            <label class="bloco" for="telefone">Número de telefone</label>
+            <input class="margin" type="number" name="telefone" id="telefone" placeholder="Seu número de telefone" title="Digite seu número de telefone">
+
+            <label class="bloco" for="endereco">Endereço</label>
+            <input class="margin" type="text" name="endereco" id="endereco" placeholder="Seu endereço" title="Digite seu endereço">
+
+            <input class="margin" type="submit" value="Enviar">
+    </form>
+    </div>
+</body>
+</html>
