@@ -1,29 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="htmx-config" content='{"selfRequestsOnly":false}'>
-    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js"></script>
-    <title>Aula 10/10/25</title>
+    <title>HTMX: Exercício Simples</title>
+    <script src="https://unpkg.com/htmx.org@1.9.10"></script>
 </head>
 <body>
-    <script>
 
-    <button hx-post="/clicked"
-        hx-trigger="click"
-        hx-target="#parent-div"
-        hx-swap="outerHTML">
-        Click Me!
-    </button>
-    </script>
-</body>
-</html>
+    <h1>Interagindo com a API de Nomes</h1>
 
-<div hx-get="https://ola-tp1.onrender.com/" hx-trigger="load" hx-swap="afterend">
-        Carregando dados de uma API externa...
+    <h2>1. Salvar Nome</h2>
+    
+    <form hx-post="https://ola-tp1.onrender.com/nomes" 
+          hx-target="#resultado-post" 
+          hx-swap="innerHTML">
+        
+        <input type="text" name="nome" placeholder="Digite um nome" required>
+        <button type="submit">Salvar nome</button>
+    </form>
+    
+    <h3>Resposta ao Salvar:</h3>
+    <div id="resultado-post">
+        Aguardando envio...
     </div>
 
-  <!-- have a button POST a click via AJAX -->
-  <button hx-get="https://ola-tp1.onrender.com/" hx-trigger="click" hx-swap="innerHTML">
-    Click Me
-  </button>
+    
+
+    <h2>2. Listar Nomes</h2>
+
+    <button hx-get="https://ola-tp1.onrender.com/nomes" 
+            hx-target="#resultado-get" 
+            hx-swap="innerHTML">
+        Mostrar Nomes 
+    </button>
+    
+    <h3>Lista Atual:</h3>
+    <div id="resultado-get">
+        A lista aparecerá aqui.
+    </div>
+
+</body>
+</html>
