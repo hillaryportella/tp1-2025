@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 08/10/2025</title>
+    <style>
+        input{
+            display: block;
+        }
+        /*.emLinha{
+            display: inline;
+        }*/
+        input[type="checkbox"], input[type="radio"]{
+            display: inline;
+        }
+        fieldset{
+            width: 215px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Restrições do input</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" size="40" maxlength="10" required value="Paula" title="Entre com o nome.">
+            <label for="email">Email:</label>
+            <input type="text" name="email" id="email" placeholder="Entre com email." autofocus>
+            <label for="idade">Idade:</label>
+            <input type="number" name="idade" step="2" value="18">
+        </fieldset>
+
+        <fieldset>
+            <legend>Complementos</legend>
+            <label for="veiculo1">Você tem bicicleta?</label>
+            <input type="checkbox" name="veiculo1" id="veiculo1" checked>
+            <label for="veiculo2">Você tem carro?</label>
+            <input type="checkbox" name="veiculo2" id="veiculo2">
+            <label for="veiculo3">Você tem moto?</label>
+            <input type="checkbox" name="veiculo3" id="veiculo3">
+        </fieldset>
+
+        <fieldset>
+            <legend>Linguagem Predileta</legend>
+            <input type="radio" id="html" name="fav_language" value="HTML" checked>
+            <label for="html">HTML</label>
+            <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+            <label for="html">JavaScript</label>
+            <input type="radio" id="css" name="fav_language" value="CSS">
+            <label for="html">CSS</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Carros</legend>
+            <label for="carro">Escolha um carro</label>
+            <select name="carro" id="carro">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+            </select>
+        </fieldset>
+       
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
